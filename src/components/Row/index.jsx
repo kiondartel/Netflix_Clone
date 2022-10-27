@@ -2,10 +2,11 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { getMovies } from '../../api';
 import * as Styled from './styles';
+;
 
 const imageHost = "https://image.tmdb.org/t/p/original"
 
-const Row = ({ title, path }) => {
+const Row = ({ title, path, isLarge }) => {
   const [movies, setMovies] = useState([]);
 
   const fetchMovies = async (_path) => {
@@ -28,9 +29,13 @@ const Row = ({ title, path }) => {
 
   return (
     <Styled.Container className="row-container">
-      <Styled.H2 className="row-header">{title}</Styled.H2>
+      <h2 className="row-header">{title}</h2>
       <Styled.Container className="row-cards">{movies?.map(movie => {
-        return (<Styled.Image className="row-image" key={movie.id} src={`${imageHost}${movie.poster_path}`} alt={movie.name} />)
+        return (<Styled.Image
+          className="row-imag "
+          key={movie.id}
+          src={`${imageHost}${isLarge ? movie.backdrop_path : movie.poster_path}`}
+          alt={movie.name} />)
       })}>
       </Styled.Container>
     </Styled.Container>
