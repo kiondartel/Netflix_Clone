@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  color: white;
-  object-fit: contain;
-  height: 448px;
+
+   &.banner-container {
+    color: white;
+    object-fit: contain;
+    height: 448px;
+   }
+
+   &.img{
+    width: 100%;
+   }
   `;
 
 export const Container = styled.div`
