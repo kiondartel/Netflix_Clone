@@ -5,10 +5,10 @@ export const Header = styled.header`
    &.banner-container {
     color: white;
     object-fit: contain;
-    height: 448px;
+    height: 700px;
    }
 
-   &.img{
+   &.svg{
     width: 100%;
    }
   `;

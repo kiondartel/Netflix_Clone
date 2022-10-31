@@ -1,6 +1,6 @@
-import './App.css';
+import './styles/App.css';
 import Row from './components/Row';
-import categories from "./api"
+import categories from "./api/api"
 import Banner from './components/Banner';
 import { NavBar } from './components/Navbar';
 

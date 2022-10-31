@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import categories, { getMovies } from '../../api';
+import categories, { getMovies } from '../../api/api';
 import * as Styled from './styles';
 
 
