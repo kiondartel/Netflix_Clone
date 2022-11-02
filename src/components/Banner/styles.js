@@ -1,20 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Header = styled.header`
-
-   &.banner-container {
+export const Div = styled.div`
+  &.banner-container {
     color: white;
-    object-fit: contain;
-    height: 700px;
-   }
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-   &.svg{
-    width: 100%;
-   }
-  `;
-
-export const Container = styled.div`
+    // border: 1px solid red;
+  }
 `;
+
+export const Container = styled.div``;
 
 export const H1 = styled.h1`
   font-size: 3rem;
@@ -33,7 +30,6 @@ export const P = styled.p`
   margin-left: 2rem;
 `;
 
-
 export const Button = styled.button`
   cursor: pointer;
   color: #fff;
@@ -47,8 +43,8 @@ export const Button = styled.button`
   padding-right: 2rem;
   margin-left: 3.5rem;
   background-color: rgba(51, 51, 51, 0.5);
-  
-  &:hover{
+
+  &:hover {
     color: #000;
     background-color: #e6e6e6;
     transition: 0.2s;
